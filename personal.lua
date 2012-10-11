@@ -1,7 +1,7 @@
 terminal = 'xterm' -- can be app in path, or full path e.g. /usr/bin/xterm
 editor = "vim"
 
-wallpaper_dir = os.getenv("HOME") .. "/pics/wp/" -- grabs a random bg
+wallpaper_dir = os.getenv("HOME") .. "/pics/wpgc/" -- grabs a random bg
 
 taglist_numbers = "chinese" -- we support arabic (1,2,3...),
 -- arabic, chinese, {east|persian}_arabic, roman, thai, random

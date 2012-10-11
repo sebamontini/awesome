@@ -28,7 +28,7 @@ editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 wallpaper_app = "feh" -- if you want to check for app before trying
-wallpaper_dir = os.getenv("HOME") .. "/pics/wp/" -- wallpaper dir
+wallpaper_dir = os.getenv("HOME") .. "/pics/wpgc/" -- wallpaper dir
 
 -- taglist numerals
 --- arabic, chinese, {east|persian}_arabic, roman, thai, random
@@ -53,7 +53,7 @@ require_safe('personal')
 
 -- {{{ Variable definitions
 -- local wallpaper_cmd = "find " .. wallpaper_dir .. " -type f -name '*.jpg'  -print0 | shuf -n1 -z | xargs -0 feh --bg-scale"
-local wallpaper_cmd = "awsetbg /home/smontini/pics/wp/wp.jpg"
+local wallpaper_cmd = "awsetbg -r /home/smontini/pics/wpgc"
 local home   = os.getenv("HOME")
 local exec   = awful.util.spawn
 local sexec  = awful.util.spawn_with_shell
@@ -565,7 +565,7 @@ awful.rules.rules = {
     { rule = { class = "Pidgin" 	},   properties = { floating = true } },
     { rule = { class = "Skype" 		},   properties = { floating = true } },
     { rule = { class = "gimp" 		},   properties = { floating = true } },
-    { rule = { class = "Firefox"	},   properties = { tag = tags[1][3] } },
+    { rule = { class = "Firefox"	},   properties = { tag = tags[1][2] } },
     { rule = { class = "Luakit"		},   properties = { tag = tags[1][2] } },
     { rule = { class = "Pidgin"		},   properties = { tag = tags[1][4] } },
 }
